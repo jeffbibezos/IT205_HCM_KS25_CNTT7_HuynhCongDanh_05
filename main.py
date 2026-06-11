@@ -237,8 +237,9 @@ def search_task():
                 break
             case _:
                 print("Vui lòng nhập đúng chức năng")
-while True:
-    choice = input("""
+def main():       
+    while True:
+        choice = input("""
 ============= PROJECT MANAGER =============
 1. Hiển thị danh sách công việc
 2. Thêm mới công việc
@@ -248,30 +249,31 @@ while True:
 6. Thống kê trạng thái tiến độ 
 7. Phân loại tiến độ tự động
 8. Thoát chương trình
+==========================================
 >> Nhập lựa chọn của bạn (1-8): """)
-    match choice:
-        case "1":
-            print("--- Danh Sách Công Việc ---")
-            print_table(works_list)
-        case "2":
-            add_task()
-        case "3":
-            update_task()
-        case "4":
-            delete_task()
-        case "5":
-            search_task()
-            pass
-        case "6":
-            
-            pass
-        case "7":
-            
-            pass
-        case "8":
-            print("Thoát chương trình")
-            break
-        case _:
-            print("Vui lòng nhập đúng chức năng!")
+        match choice:
+            case "1":
+                print("--- Danh Sách Công Việc ---")
+                print_table(works_list)
+            case "2":
+                add_task()
+            case "3":
+                update_task()
+            case "4":
+                delete_task()
+            case "5":
+                search_task()
+                pass
+            case "6":
+                
+                pass
+            case "7":
+                
+                pass
+            case "8":
+                print("Thoát chương trình")
+                break
+            case _:
+                print("Vui lòng nhập đúng chức năng!")
 
 
